@@ -1,11 +1,13 @@
 # import the random package so we can generate a random AI choice
 from random import randint
 from gameFunction import winlose, gameVars, compare
+import colorama
+from colorama import Fore
 
 while gameVars.player is False:
 	print("============================================")
-	print("Computer Lives:", gameVars.computer_lives, "/5")
-	print("Player Lives:", gameVars.player_lives, "/5")
+	print(Fore.RED + "Computer Lives:", gameVars.computer_lives, "/5")
+	print(Fore.Blue + "Player Lives:", gameVars.player_lives, "/5")
 	print("============================================")
 	print("Choose your weapon!\n")
 	player=input("choose rock, paper or scissors \n")
