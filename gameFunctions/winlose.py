@@ -1,15 +1,15 @@
 from random import randint
-from gameFunction import gameVars
+from gameFunctions import gameVars, winlose
 
 def winorlose(status):
-	print("called win or lose function", status, "\n")
+	#print("called win or lose function", status, "\n")
 	print("You", status, "! would you like to play again?")
 	choice = input("Y / N?")
 
 	if choice == "Y" or choice == "y":
 		# reset the game and start all over again
-		gameVars.player_lives = 1
-		gameVars.computer_lives = 1
+		gameVars.player_lives = 5
+		gameVars.computer_lives = 5
 		gameVars.player = False
 		gameVars.computer = gameVars.choices[randint(0, 2)]
 
