@@ -16,3 +16,9 @@ Chose your weapon wisely!
 Built with Python 3
 
 Enjoy!
+
+Author: 
+Sarah Calver
+
+License:
+MIT
